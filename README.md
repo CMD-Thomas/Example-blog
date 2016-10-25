@@ -1,7 +1,9 @@
 # Node Blog
 
 ###How to use
-1. This is example code which won't work because there is no database. The database is in mysql a live example can be found on 
+1. This is example code which won't work because there is no database. The database is in mysql a live example can be found [here](https://thomasmachielsen.me/)
+2. Obviously this is not a finished project, it's a work in progress.
+3. 
 
 ###Info
 On the back end there's a Node web app powered with Express. In the current situation I call a res.render inside the route. Then a view gets called, this view uses EJS to render stuff.
