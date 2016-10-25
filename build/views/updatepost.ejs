@@ -1,0 +1,21 @@
+<%- include head %>
+<%- include header %>
+    <body class="updatepost">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+                    <h1 class="updatepost__title">Edit your post</h1>
+                    <form method="post" class="updateform" action="/admin/update/<%=posts[0].id%>">
+                        <h4>Edit title:</h4>
+                        <input type="text" id="post_title" name="post_title" value="<%-posts[0].title%>">
+                        <div for="post">Post:</div>
+                        <textarea class="form__textarea" id="post" name="post"><%-posts[0].post%></textarea>
+                        <label for="category">Category</label>
+                        <input type="text" id="category" name="category" value="<%-posts[0].category%>">  
+                        <button>Edit</button>  
+                    </form>
+                </div>
+            </div>
+        </div>
+<%- include footer %>
+

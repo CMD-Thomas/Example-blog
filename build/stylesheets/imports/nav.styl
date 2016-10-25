@@ -1,0 +1,63 @@
+.mobile-nav
+  bottom 0
+  position fixed
+  z-index 1000
+  a 
+    background $primary-orange
+    font-family 'Raleway', sans-serif
+    font-weight 700
+    color rgba(265,265,265, 0.7)
+    padding-top: 12px
+    border: 0
+    border-right: 1px solid white
+    box-shadow none
+    border-radius 0
+    text-shadow none
+    &:last-child 
+      border 0  
+    &:active 
+      background $primary-orange
+      color white 
+      opacity 1
+    &:hover 
+      background $primary-orange
+      color white 
+  i 
+    color white
+    opacity 0.9
+    margin-right 6px
+    font-size 12px    
+
+// nav
+//   background $primary-orange
+
+
+nav 
+  display flex
+  justify-content space-around
+  align-items center
+  a 
+    font-family 'Raleway', sans-serif
+    margin 10px 0
+    font-weight 700
+    color rgba(265,265,265, 0.7)
+    &:hover 
+      color white
+      text-decoration none
+  i 
+    color white
+    opacity 0.9
+    margin-right 6px
+    font-size 12px  
+    &:hover 
+      color rgba(265, 265, 265, 1)
+  &:last-child 
+    margin-right 20px
+  .menu-items 
+    @media mq-sm
+      display none
+    @media mq-xs
+      display none
+
+    
+

@@ -1,0 +1,17 @@
+<%- include head %>
+<%- include header %>
+<body>
+<section class="category__header" style="background: url(http://lorempixel.com/1000/200/<%=req.params.id%>);">
+    <h1><%=req.params.id%></h1>
+</section>
+    <section class="category__articles container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+                <article>
+                    <h2 class="article__title">Currently no posts in this category</h2>
+                    <hr>
+                </article>
+            </div>
+        </div>
+    </section>
+<%- include footer%>

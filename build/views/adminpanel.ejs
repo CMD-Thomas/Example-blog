@@ -1,0 +1,42 @@
+<%- include head %>
+<%- include header %>
+  <body class="admin">
+    <div class="container">
+      <h2>Post Overview</h2>
+      <p class="pull-right"><a href="<%=req.baseUrl%>/add/">Add new Post</a></p>
+      <p>Title</p>
+
+      <%for (i=0; i < posts.length; i++){ %>
+      <form method="post" action="<%=req.baseUrl%>/delete/<%=posts[i].id%>">
+        <p><%-posts[i].title%></p>
+        <span class="pull-right">
+          <p class="first__uppercase"><%-posts[i].category%></p>
+          <a class="icon" href="admin/update/<%=posts[i].id%>"><i class="icon-edit"></i></a>
+          <a class="icon" data-toggle="modal" id="<%-posts[i].id%>"  data-target="#myModal"><i class="icon-delete"></i></a>
+        </span>
+      </form>
+    <%};%>
+
+
+    <!-- Modal shouldnt be here, will fix -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Are you sure?</h4>
+          </div>
+          <div class="modal-body">
+            Are you sure you wish to delete this post?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+            <button type="button" id="remove-post" class="btn btn-primary">Yes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<%-include footer%>

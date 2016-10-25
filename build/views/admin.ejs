@@ -1,0 +1,32 @@
+<%- include head %>
+<%- include header %>
+<h3>Post article</h3>
+
+<p>Hello <span id="username"> <%=username%></span> </p>
+
+<form method="post" action="<%= req.baseUrl + "/add" %>">
+
+  <label for="post_title">Titel ofzo is: </label>
+  <input type="text" id="post_title" name="post_title" value="">
+
+  <label for="post">Post:</label>
+  <textarea id="post" value="" name="post" placeholder="place your text here"></textarea>
+
+  <label for="category">Pick a category</label>
+  <select id="category" name="category">
+    <option value="tech">Tech</option>
+    <option value="cats">Cats</option>
+    <option value="work">My work</option>
+    <option value="about">About me</option>
+    <option value="food">Food</option>
+    <option value="beers">Beers</option>
+  </select>
+
+  <button>Post!</button>
+  
+</form>
+
+
+
+<%- include footer %>
+

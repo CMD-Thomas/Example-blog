@@ -1,0 +1,45 @@
+.login 
+	background url(/img/bg.png) 
+	background-size cover 
+	form
+		margin-top: 80px
+	
+.login__inputs 
+	border-radius 10px
+	padding 10px
+	margin-top 10px
+	width 100%
+	text-align center
+	background: rgba(255,255,255,0.1)
+	color white
+	box-shadow none
+	border 0 
+	&:focus 
+		border 0
+		outline none
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px rgba(255,255,255, 0.8) inset;
+}
+
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: /*your box-shadow*/,0 0 0 50px rgba(255,255,255, 0.8) inset;
+    -webkit-text-fill-color: #333;
+}
+	
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+
+:-ms-input-placeholder {  
+   color: white;  
+}

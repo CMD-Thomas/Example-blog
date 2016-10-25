@@ -1,0 +1,63 @@
+//MQs 
+mq-xs  = "only screen and (max-width: 767px)"
+mq-sm  = "only screen and (max-width: 991px) and (min-width: 768px)"
+mq-md  = "only screen and (max-width: 1199px) and (min-width: 992px)"
+mq-lg  = "only screen and (min-width: 1201px)"
+
+//usage
+//class
+//@media mq-sm
+//	color red
+
+//reset
+h1,
+h2,
+h3
+	font-family: 'Bitter', serif;
+	font-weight 700
+  
+body 
+	font-family 'Raleway', sans-serif
+	line-height 1.5em
+	font-size: 16px
+	height 100%
+	
+.container 
+	padding-bottom 10px
+	
+i 
+	text-decoration none
+	color rgba(33,33,33, 0.5)
+	font-size 16px
+	transition color 0.5s ease-in
+	&:hover 
+		color rgba(33,33,33, 0.9)
+	
+.first__uppercase::first-letter 
+	text-transform uppercase
+	
+//main colors
+$primary-orange = #f96332
+
+.background--darkgrey
+	background #333
+
+//buttons
+.btn--primary 
+	background: $primary-orange
+	color white 
+	border-radius 10px
+	padding 10px
+	margin-top 10px
+	width 100%
+	box-shadow none
+	border 0 
+	&:focus 
+		border 0
+		outline none
+
+//forms
+.form__textarea 
+	width 100%
+	height 500px
+	border 0

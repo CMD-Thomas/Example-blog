@@ -1,0 +1,33 @@
+<%- include head %>
+<%- include header %>
+
+<body class="home">
+<section class="home--container container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+      <h1 class="home__title">/Latest posts/</h1>
+
+    </div>
+  </div>
+  <hr>
+<%for (i= 0; i < posts.length; i++){ %>
+<%  var str = posts[i].title;
+var newstr = str.replace(/ /ig, '-').replace(/\?/ig, '-'); %>
+    <div class="row">
+        <div class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+            <article>
+                <a class="frontpage__titles" href="/category/<%=posts[i].category%>/<%-newstr%>/<%=posts[i].id%>"><%=posts[i].title%></a>
+                <span class="article__information">
+                    <img src="../img/icon-source.png"><span><%=posts[i].created_by%> in <a><%=posts[i].category%></a></span><span class="frontpage__date"><img src="../img/icon-time.png" class="ic--date"><%=posts[i].created_at%></span>
+                </span>
+                <a class="" href="/category/<%=posts[i].category%>/<%-newstr%>/<%=posts[i].id%>">Read More...</a>
+                <hr>
+            </article>
+        </div>
+    </div>
+<%};%>
+</section>
+
+</body>
+
+<%- include footer %>

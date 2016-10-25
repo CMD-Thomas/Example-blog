@@ -1,0 +1,17 @@
+<%- include head %>
+<%- include header %>
+<body class="login">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<form method="post" action="/users/login">
+				  <input type="text" class="login__inputs" placeholder="Username" id="field_username" name="username" value="">
+				  <input type="password" class="login__inputs" placeholder="Password" id="field_password" name="password" value="">
+				  <button type="submit" class="btn--primary">Login!</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+<%- include footer %>
+

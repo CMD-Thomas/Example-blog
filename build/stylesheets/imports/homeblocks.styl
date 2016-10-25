@@ -1,0 +1,66 @@
+
+
+//here starts diff stuff
+.home__container ul 
+  list-style none
+  margin 0 
+  padding 0 
+
+.home__container ul .home__items 
+  width 20%
+  height auto
+  position relative
+  float left
+  margin: 0 
+  padding 0 0 20% 0
+  transition 0.8s ease
+
+.home__container ul .home__items:hover span 
+  height 50%
+
+@media screen and (max-width: 1280px) 
+  .home__container ul .home__items 
+    width 25%
+    padding-bottom: 25%
+  
+@media screen and (max-width: 1024px) 
+  .home__container ul .home__items 
+    width 33.33%
+    padding-bottom 33.33%
+
+@media screen and (max-width: 600px) 
+  .home__container ul .home__items 
+    width 50%
+    padding-bottom 50%
+  
+@media screen and (max-width: 360px) 
+  .home__container ul .home__items 
+    width 100%
+    padding-bottom 100%
+  
+.home__container ul .home__items img 
+  max-width none
+  width 100%
+  position absolute
+  top 0
+  left 0
+
+.home__container ul .home__items span 
+  width 100%
+  height 3rem
+  line-height 3rem
+  position absolute
+  bottom -1px
+  left 0
+  padding 0 1rem
+  font-size 24px
+  font-family: 'Bitter', serif;
+  font-weight 700
+  color #fff
+  background rgba(0, 0, 0, 0.5)
+  transition 0.8s ease
+
+.last--item
+  margin-bottom 38px !important
+
+
